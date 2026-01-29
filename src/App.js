@@ -345,7 +345,8 @@ export default function App() {
       address: 'Aesop Aoyama, Tokyo',
       current: 12, 
       capacity: 20, 
-      imageUrl: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80' 
+      imageUrl: `${process.env.PUBLIC_URL}/images/act1.png`
+
     },
     { 
       id: 2, 
@@ -356,7 +357,8 @@ export default function App() {
       current: 48, 
       capacity: 50, 
       // Abstract Smoke/Incense (No Bottles)
-      imageUrl: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&q=80' 
+      imageUrl: `${process.env.PUBLIC_URL}/images/act2.jpg`
+
     },
     { 
       id: 3, 
@@ -366,7 +368,8 @@ export default function App() {
       address: 'Aesop Nakameguro',
       current: 5, 
       capacity: 30, 
-      imageUrl: 'https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&w=800&q=80' 
+      imageUrl: `${process.env.PUBLIC_URL}/images/act3.png`
+
     }
   ];
 
