@@ -230,7 +230,7 @@ const HomeSection = () => (
   <div className="pb-8">
     <div className="relative w-full h-[500px] mb-8 overflow-hidden">
       <img 
-        src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1000&q=80" 
+        src={`${process.env.PUBLIC_URL}/images/main1.jpg` }
         alt="Aesop Atmosphere" 
         className="absolute inset-0 w-full h-full object-cover"
       />
@@ -267,7 +267,7 @@ const HomeSection = () => (
        </div>
        <div className="flex flex-col items-center">
          <div className="w-full h-64 mb-6 overflow-hidden rounded-sm relative">
-             <img src="https://images.unsplash.com/photo-1629196914375-f7e48f477b6d?auto=format&fit=crop&w=600&q=80" alt="Dried Botanicals Art" className="object-cover w-full h-full" />
+             <img src={`${process.env.PUBLIC_URL}/images/main2.png` } alt="Dried Botanicals Art" className="object-cover w-full h-full" />
          </div>
          
          <h3 className="font-serif text-lg font-bold tracking-wide uppercase mb-1" style={{ color: COLORS.olive }}>
@@ -309,7 +309,7 @@ export default function App() {
       user: { name: 'Hannah', id: '123456', petals: 3 },
       date: 'NOVEMBER 3',
       // Concrete/Stone Texture
-      imageUrl: 'https://images.unsplash.com/photo-1487700160041-babef9c3cb55?auto=format&fit=crop&w=800&q=80',
+      imageUrl: `${process.env.PUBLIC_URL}/images/p1.jpg`,
       imageCaption: 'Texture & Silence',
       content: "The silence of the store this morning. Light hits the raw concrete wall—a visual echo of our base notes.",
       likes: 84
@@ -319,7 +319,7 @@ export default function App() {
       user: { name: 'Sheldon', id: '987654', petals: 6 },
       date: 'NOVEMBER 2',
       // Abstract Amber/Gold Fluid Texture (Abstract, No Bottles)
-      imageUrl: 'https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&w=800&q=80',
+      imageUrl: `${process.env.PUBLIC_URL}/images/p2.jpg`,
       imageCaption: 'Amber Refraction',
       content: "Study of light refraction through amber resin. It protects the stability of the botanical formulations inside.",
       likes: 245
@@ -329,7 +329,7 @@ export default function App() {
       user: { name: 'Amy', id: '456789', petals: 4 },
       date: 'OCTOBER 31',
       // Green Leaf 
-      imageUrl: 'https://images.unsplash.com/photo-1611095973763-414019e72400?auto=format&fit=crop&w=800&q=80',
+      imageUrl: `${process.env.PUBLIC_URL}/images/p3.jpg`,
       imageCaption: 'Verdant Notes',
       content: "Crushed Basil. The sharp, green top note of Tacit. A memory of summer in Kyoto.",
       likes: 156
